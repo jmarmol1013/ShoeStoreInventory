@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.shoestoreinventory.InventoryController">
+    <children>
+        <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+            <children>
+                <Label layoutX="133.0" layoutY="30.0" text="Shoe Store inventory">
+                    <font>
+                        <Font name="System Bold" size="24.0" />
+                    </font>
+                </Label>
+                <Label layoutX="460.0" layoutY="35.0" text="Control your inventory">
+                    <font>
+                        <Font size="15.0" />
+                    </font></Label>
+<!--                <ImageView fitHeight="89.0" fitWidth="96.0" layoutX="32.0" pickOnBounds="true" preserveRatio="true">-->
+<!--                    <image>-->
+<!--                        <Image url="../../../Images/logoShoe.jpg" />-->
+<!--                    </image>-->
+<!--                </ImageView>-->
+                <Label layoutX="121.0" layoutY="127.0" text="Table:">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <ChoiceBox fx:id="table" layoutX="181.0" layoutY="125.0" prefWidth="150.0" />
+                <Button fx:id="showTable" layoutX="121.0" layoutY="237.0" mnemonicParsing="false" onAction="#showTable" prefHeight="27.0" prefWidth="210.0" text="Look table">
+                    <font>
+                        <Font size="15.0" />
+                    </font></Button>
+                <Button fx:id="addProduct" layoutX="435.0" layoutY="101.0" mnemonicParsing="false" onAction="#addProduct" prefHeight="38.0" prefWidth="112.0" text="Add product">
+                    <font>
+                        <Font name="System Bold" size="15.0" />
+                    </font>
+                </Button>
+                <Button fx:id="sellProduct" layoutX="435.0" layoutY="181.0" mnemonicParsing="false" onAction="#sellProduct" prefHeight="38.0" prefWidth="112.0" text="Sell product">
+                    <font>
+                        <Font size="15.0" />
+                    </font></Button>
+                <Button fx:id="changeProduct" layoutX="435.0" layoutY="257.0" mnemonicParsing="false" onAction="#changeProduct" prefHeight="38.0" prefWidth="118.0" text="Change product">
+                    <font>
+                        <Font size="14.0" />
+                    </font></Button>
+            </children>
+        </AnchorPane>
+    </children>
+</VBox>
